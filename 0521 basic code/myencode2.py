@@ -19,6 +19,25 @@ print(d)
 # 인코딩을 위한 키, 값의 딕셔너리 생성
 key = 3
 d = {} # 딕서니리 만들기
+c = ord('A') # 알파벳 A에서 부터 시작하여
+for i in range(26): # 알파벳 인코딩 딕셔너리 생성
+    d[chr(i+c)] = chr((i + key) % 26 + c)
+
+print(d)
+
+
+# 인코딩을 위한 키, 값의 딕셔너리 생성
+key = 3
+d = {} # 딕서니리 만들기
+c = ord('a') # 알파벳 a에서 부터 시작하여
+for i in range(26): # 알파벳 인코딩 딕셔너리 생성
+    d[chr(i+c)] = chr((i + key) % 26 + c)
+
+print(d)
+
+# 인코딩을 위한 키, 값의 딕셔너리 생성
+key = 3
+d = {} # 딕서니리 만들기
 for c in (65, 97): # 알파벳 A, a에서 부터 시작하여
     for i in range(26): # 알파벳 인코딩 딕셔너리 생성
         d[chr(i+c)] = chr((i + key) % 26 + c)
